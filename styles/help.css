@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap');
+
+body{
+	font-family: 'Philosopher', sans-serif;
+}
+
+h1{
+    margin-top: 20px;
+	text-align: center;
+}
+
+nav, nav a{
+	text-align: center;
+	font-size: 1.03em;
+	color: black;
+	text-decoration: none;
+	word-spacing: 50px;
+	font-weight: bold;
+  margin: 20px 10px;
+}
+
+a {
+  transition: all 0.3s;
+  text-decoration:none;
+}
+
+nav a:hover{
+  color:#779ECB;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+/* 
+.head-nav nav a:nth-child(1){
+	color: blue;
+} */
+
+/* nav css end */
+
+.help-container{
+    background-image: url("https://images.unsplash.com/photo-1641064926394-623e85a46b59?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80");
+    margin: 10px;
+    padding: 50px;
+    justify-content: center;
+    text-align: justify;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.help-container h2{
+    text-align: center;
+    background-color: rgba(216, 191, 216,0.8);
+    margin: 0 500px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.help-container p{
+    text-align: center;
+    background-color: rgba(255, 255, 255,0.8);
+    margin: 0 500px;
+    padding: 10px;
+    border-radius: 5px;
+}

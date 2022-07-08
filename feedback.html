@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ClickMyFlick | Feedback</title>
+  <link rel="stylesheet" href="./styles/feedback.css">
+  <link rel="stylesheet" href="./styles/copyright.css">
+</head>
+
+<body>
+  <div class=head-nav>
+    <header>
+      <h1>Click My Flick</h1>
+    </header>
+    <nav>
+      <a href="./home.html">Home</a>
+      <a href="./movie.html">Movies</a>
+      <a href="./cities.html">Cinemas</a>
+      <a href="./feedback.html">Feedback</a>
+      <a href="./help.html">Help</a>
+    </nav>
+  </div>
+
+  <div class="background">
+    <div class="container">
+      <div class="screen">
+        <div class="screen-header">
+          <div class="screen-header-left">
+            <div class="screen-header-button close"></div>
+            <div class="screen-header-button maximize"></div>
+            <div class="screen-header-button minimize"></div>
+          </div>
+          <div class="screen-header-right">
+            <div class="screen-header-ellipsis"></div>
+            <div class="screen-header-ellipsis"></div>
+            <div class="screen-header-ellipsis"></div>
+          </div>
+        </div>
+        <div class="screen-body">
+          <div class="screen-body-item left">
+            <div class="app-title">
+              <span>CONTACT</span>
+              <span>US</span>
+            </div>
+            <div class="app-contact">CONTACT INFO : +91 84202 34363</div>
+          </div>
+          <div class="screen-body-item">
+            <form class="app-form">
+              <div class="app-form-group">
+                <input class="app-form-control" type="text" id="name" placeholder="Name*" required>
+              </div>
+              <div class="app-form-group">
+                <input class="app-form-control" type="email" id="email" placeholder="Email*" required>
+              </div>
+              <div class="app-form-group">
+                <input class="app-form-control" type="tel" id="number" placeholder="Phone Number">
+              </div>
+              <div class="app-form-group message">
+                <input class="app-form-control" type="text" id="fmessage" placeholder="Write your message here*" required>
+              </div>
+              <form class="app-form-group buttons">
+                <button class="app-form-button" type="reset" id="cancelButton">CANCEL</button>
+                <button class="app-form-button" type="submit" id="sendLetter">SEND</button>
+              </form>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <p class="cp-text">
+    © Copyright 2022 Click My Flick. All rights reserved.
+  </p>
+</body>
+<script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.8.2/firebase-firestore.js"></script>
+<script src="./js/firebaseconfig.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+<script src="./js/feedback.js"></script>
+
+</html>

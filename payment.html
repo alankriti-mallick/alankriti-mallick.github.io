@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/payment.css">
+</head>
+<body>
+    <nav>
+        <a href="./home.html">Home</a>
+        <a href="./feedback.html">Feedback</a>
+        <a href="./help.html">Help</a>
+    </nav>
+
+    <div class="book-container">
+        <div class="book-details">
+            <div class="movie-name">
+                <h3>Movie Name: </h3>
+                <h3 id="movie-name"></h3>
+            </div>
+            <div class="cinema-name">
+                <h3>Cinema Name: </h3>
+                <h3 id="cinema-name"></h3>
+            </div>
+            <div class="city-name">
+                <h3>City Name: </h3>
+                <h3 id="city-name"></h3>
+            </div>
+            <div class="book-date">
+                <h3>Date: </h3>
+                <h3 id="book-date"></h3>
+            </div>
+            <div class="book-time">
+                <h3>Time: </h3>
+                <h3 id="book-time"></h3>
+            </div>
+            <div class="seat-number">
+                <h3>Seats: </h3>
+                <h3 id="seat-number"></h3>
+            </div>
+            <div class="price">
+                <h3>Price: </h3>
+                <h3 id="price"></h3>
+            </div>
+            <div class="ticket-id">
+                <h3>Ticket ID: </h3>
+                <h3 id="ticket-id"></h3>
+            </div>
+        </div>
+        <div class="button-container">
+            <div class="button" id="print-button">
+                PRINT
+            </div>
+        </div>
+        
+    </div>
+</body>
+<script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.8.2/firebase-firestore.js"></script>
+<script src="./js/firebaseconfig.js"></script>
+<!-- <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script> -->
+<script src="./js/payment.js"></script>
+</html>

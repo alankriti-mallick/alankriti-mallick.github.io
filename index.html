@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClickMyFlick</title>
+    <link rel="stylesheet" href="./styles/login.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="login-box">
+            <div class="text-login">
+                <p>Login</p>
+                <span>Please enter your mobile number</span>
+            </div>
+            <div class="login-form-number">
+                <form method="POST">
+                    <input class="form-control" id="number" name="number" type="tel" placeholder="10-Digit-Mobile Number" minlength="10" maxlength="10" required>
+                    <div class="recaptcha-container" id="recaptcha-container"></div>
+                    <input class="form-enter" type="button" id="getOTP" value="Get OTP">
+                </form>
+            </div>
+            <div class="login-form-otp">
+                <form action="">
+                    <input class="form-control" id="otp" name="otp" type="password" placeholder="******" minlength="6" maxlength="6" required>
+                    <input class="form-enter" type="button" id="login" value="Login">
+                </form>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.8.2/firebase-firestore.js"></script>
+<script src="./js/firebaseconfig.js"></script>
+<script src="./js/login.js"></script>
+
+</html>

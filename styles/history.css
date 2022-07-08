@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap');
+
+body{
+	font-family: 'Philosopher', sans-serif;
+    font-weight: bold;
+}
+
+nav, nav a{
+	text-align: center;
+	font-size: 1.03em;
+	color: rgb(0, 0, 0);
+	text-decoration: none;
+	word-spacing: 50px;
+	font-weight: bold;
+  margin: 20px 10px;
+}
+
+a {
+  transition: all 0.3s;
+  text-decoration:none;
+}
+
+nav a:hover{
+  color:#779ECB;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+/* 
+.head-nav nav a:nth-child(1){
+	color: blue;
+} */
+
+/* nav css end */
+
+.booking-container{
+    margin: 50px;
+    padding: auto;
+    height: 80%;
+    justify-content: center;
+    text-align: justify;
+    font-size: 20px;
+}
+
+ul{
+    list-style: none;
+}
+
+.booking-container a{
+    background-color: lavender;
+    border-radius: 10px;
+    transition: all 0.5s;
+    padding: 10px;
+    color: black;
+}
+
+.booking-container a:hover{
+    transition: all 0.5s;
+    background-color: midnightblue;
+    color: white;
+}

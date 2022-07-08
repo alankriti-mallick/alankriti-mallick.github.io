@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap');
+
+body{
+    font-family: 'Philosopher', sans-serif;
+    background-image: url(../Assets/booking-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    min-width: 100vw;
+    min-height: 100vh;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+/* nav bar css */
+
+.head-nav{
+    background-image: url(../Assets/movie-hall.jpg);
+    width: 100%;
+    margin-top: -20px;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgba(236, 236, 236, 0.5);
+}
+
+.head-nav h1{
+    margin-top: 20px;
+	text-align: center;
+}
+
+nav, nav a{
+	text-align: center;
+	font-size: 1.03em;
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+	word-spacing: 50px;
+	font-weight: bold;
+    margin: 20px 10px;
+}
+
+a {
+    transition: all 0.3s;
+    text-decoration:none;
+  }
+  
+  nav a:hover{
+    color:#779ECB;
+    transition: all 0.3s;
+  }
+
+/* .head-nav nav a:nth-child(3){
+	color: blue;
+} */
+
+/* nav bar css end */
+
+.price-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.date-time{
+    margin: 10px 10px 0 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.date, .time{
+    margin: 5px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.date-time .dateOptions, .timeOptions{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.date-time button{
+    padding: 5px;
+    justify-content: space-between;
+    margin: 5px;
+    border: none;
+    height: 50px;
+    width: 90px;
+    opacity: 0.8;
+    transition: all 0.5s;
+    cursor: pointer;
+
+}
+
+.date-time button:hover{
+    opacity: 1;
+}
+
+/* .date-time button:not(.active):hover{
+    opacity: 1;
+    transform: scale(1.1,1.1);
+    transition: all 0.5s;
+    cursor: pointer;
+} */
+
+.date-time button.active{
+    opacity: 1;
+    transform: scale(1.1,1.1);
+    transition: all 0.5s;
+}
+
+/* .date-time button:focus,.date-time button:active{
+    opacity: 1;
+    transform: scale(1.1,1.1);
+} */
+
+.date-time .date,.time{
+    text-align: center;
+    padding: 10px;
+}
+
+.date-time p{
+    text-align: center;
+}
+
+.date-time .date-label, .time-label{
+    margin: 2px;
+    padding: 5px;
+}
+
+.seat-container{
+    display: block;
+    margin: 0 10px 10 px10px;
+    padding: 5px;
+}
+
+.seatCount{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+    padding: 5px;
+}
+
+.seatCount .seat-count-label{
+    margin: 10px;
+}
+
+.seat-container .seats{
+    display: flex;
+    width: 100%;
+    margin: 10px;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    /* overflow-x: hidden; */
+    flex-wrap: wrap;
+}
+
+.seat-container .seats .seat-row{
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.seat-container .seats .seat-row button{
+    margin: 10px 2px;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    font-size: 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border: none;
+    opacity: 0.5;
+    transition: all 0.2s;
+}
+
+.seat-container .seats .seat-row button:hover{
+    opacity: 1;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+/* .seat-container .seats .seat-row button */
+.active{
+    opacity: 1!important;
+    background-color: royalblue;
+}
+
+.no-click{
+    pointer-events: none;
+}
+
+
+
+.seat-container .seats .seat-row button:nth-child(2),
+.seat-container .seats .seat-row button:nth-child(7){
+    margin-right: 50px;
+}
+
+.screen{
+    width: 100%;
+    margin-top: 50px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    font-family: monospace;
+}
+
+.screen .screen-label{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    padding-left: 40px;
+}
+
+.screen .screen-box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 60px;
+}
+
+.screen .screen-box{
+    height: 5px;
+    width: 500px;
+    background: rgb(134, 133, 133);
+    border: solid 2px rgb(51, 51, 51);
+}
+
+.submit-container{
+    display: flex;
+    justify-content:end;
+    margin: -100px 50px 100px 50px;
+}
+
+.submit-container .pay-button{
+    text-align: center;
+    padding: 10px 10px 0 10px;
+    text-decoration: none;
+    position: relative;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    border: none;
+    width: 70px;
+    height: 40px;
+    margin-right: 50px;
+    transition: all 0.2s;
+    color: black;
+}
+
+.submit-container .pay-button:hover{
+    transform: scale(1.1,1.1);
+    background-color: rgb(182, 12, 0);
+    color: white;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.seat-selected{
+    opacity: 1!important;
+    background-color: red;
+    /* pointer-events: none; */
+    cursor:not-allowed!important;
+}
+
+.seat-selected:hover{
+    cursor: not-allowed!important;
+}

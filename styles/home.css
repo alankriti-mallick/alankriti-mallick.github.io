@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap');
+
+body{
+	font-family: 'Philosopher', sans-serif;
+}
+
+h1{
+    margin-top: 20px;
+	text-align: center;
+}
+
+nav, nav a{
+	text-align: center;
+	font-size: 1.03em;
+	color: black;
+	text-decoration: none;
+	word-spacing: 50px;
+	font-weight: bold;
+  margin: 20px 10px;
+}
+
+a {
+  transition: all 0.3s;
+  text-decoration:none;
+}
+
+nav a:hover{
+  color:#779ECB;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+/* 
+.head-nav nav a:nth-child(1){
+	color: blue;
+} */
+
+/* nav css end */
+
+.welcomeuser{
+  background-color: lightcoral;
+  margin: 0 600px 10px 600px;
+  border-radius: 5px;
+}
+
+nav p{
+  margin: 0;
+}
+
+
+.logout-button{
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+}
+
+.logout-button a{
+  background-color: cornflowerblue;
+  padding: 15px;
+  border-radius: 15px;
+  transition: all 0.3s;
+
+}
+
+.logout-button a:hover{
+  background-color: rgb(125, 100, 237);
+  color: white;
+  transform: translateY(-5px);
+  transition: all 0.3s;
+}
+
+
+.cover-container{
+	background-image: url(../Assets/home-bg.jpg);
+	padding: 100px;
+	width: 90%;
+  margin: -30px;
+	/* background-size: cover; */
+}
+
+.cover-container .heading {
+  font-weight: bold;
+  margin: 50px 50px;
+  font-size: 10vw;
+  line-height: 10vw;
+  color: #FF6D00;
+  -webkit-text-fill-color: transparent;
+  background-clip:content-box;
+  -webkit-background-clip: text;
+  text-align: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  animation: slideshow 5s infinite steps(1);
+}
+
+@keyframes slideshow {
+  0%, 100% {
+    background-image: url("https://images.unsplash.com/photo-1640964488903-9b85450f1b76?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  }
+  14.2857142857% {
+    background-image: url("https://images.unsplash.com/photo-1640978739025-2eb48d8c3fb3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  }
+  28.5714285714% {
+    background-image: url("https://images.unsplash.com/photo-1640973023201-829349b96ff6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80");
+  }
+  42.8571428571% {
+    background-image: url("https://images.unsplash.com/photo-1640975532489-a21f4e352ac5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  }
+  57.1428571429% {
+    background-image: url("https://images.unsplash.com/photo-1640816701782-e213ebb25364?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  }
+  71.4285714286% {
+    background-image: url("https://images.unsplash.com/photo-1640958059120-7ad1b03caa7e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80");
+  }
+  85.7142857143% {
+    background-image: url("https://images.unsplash.com/photo-1640905377461-dbf7f6332063?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  }
+}
+
+.my-bookings{
+  margin: 50px;
+  justify-content: center;
+  padding: 15px;
+  /* background-color: royalblue; */
+  text-align: center;
+  font-size: 30px;
+}
+
+.my-bookings a{
+  padding: 15px;
+  background-color: skyblue;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+
+.my-bookings a:hover{
+  cursor: pointer;
+  background-color: navy;
+  color: white;
+  transition: all 0.3s;
+}
+

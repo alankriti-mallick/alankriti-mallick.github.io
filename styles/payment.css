@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap');
+
+body{
+    
+    font-family: 'Philosopher', sans-serif;
+}
+
+/* nav bar css */
+
+.head-nav{
+    background-image: url(../Assets/movie-hall.jpg);
+    width: 100%;
+    margin-top: -20px;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgba(236, 236, 236, 0.5);
+}
+
+.head-nav h1{
+    margin-top: 20px;
+	text-align: center;
+}
+
+nav, nav a{
+	text-align: center;
+	font-size: 1.03em;
+	color: black;
+	text-decoration: none;
+	word-spacing: 50px;
+	font-weight: bold;
+    margin: 20px 10px;
+}
+a {
+    transition: all 0.3s;
+    text-decoration:none;
+  }
+  
+  nav a:hover{
+    color:#779ECB;
+    transition: all 0.3s;
+  }
+
+/* .head-nav nav a:nth-child(3){
+	color: blue;
+} */
+
+/* nav bar css end */
+
+.book-container{
+    width: 80%;
+    margin: 100px;
+    padding: 50px;
+    display: block;
+    justify-content: center;
+}
+
+.book-container .book-details{
+    /* margin: 0 0 0 100px; */
+    display: block;
+    width: 80%;
+    justify-content: center;
+}
+
+.book-details .movie-name, .cinema-name, .city-name, .book-date, .book-time, .seat-number, .price, .ticket-id{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+h3{
+    margin: 10px;
+}
+
+.button-container{
+    width: 80%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+.button{
+    padding: 15px;
+    background-color: royalblue;
+    border-radius: 5px;
+    cursor: pointer;
+}
